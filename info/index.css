@@ -1,0 +1,126 @@
+:root {
+	--usal-bgn: rgb(255,128,102);
+	--usal-end: rgb(255,42,0);
+	--uoc-bgn: rgb(115,237,255);
+	--uoc-end: rgb(25,102,255);
+	--google-bgn: rgb(244,180,0);
+	--google-end: rgb(204,136,0);
+}
+
+@keyframes fadein {
+	to { opacity: 1; }
+}
+
+section.screen {
+	height: auto;
+
+	padding-top: 100px;
+
+	background-image: url('/assets/img/backgrounds/abstract-background-yellow.webp');
+	background-position: top;
+
+	opacity: 0;
+	animation: fadein 1s;
+	animation-fill-mode: forwards;
+}
+
+section.screen > * {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 30px;
+}
+
+h1 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+
+	padding: 15px;
+	gap: 10px;
+
+	background: linear-gradient(90deg, rgb(0,255,127) 0%, rgb(0,179,149) 100%);
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+	transition: 0.33s;
+}
+
+.card:hover {
+	translate: -5px -5px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.33s;
+}
+
+.list {
+	display: flex;
+	gap: 20px;
+}
+
+#skills {
+	flex-direction: row;
+}
+
+.skill {
+	display: flex;
+	flex-direction: column;
+
+	gap: 10px;
+}
+
+.skill a {
+	font-weight: normal;
+}
+
+.skill img {
+	width: 180px;
+	height: 180px;
+}
+
+.skill .description {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.skill .description * {
+	margin: 0px;
+}
+
+#acreditations {
+	flex-direction: column;
+}
+
+.acreditation img {
+	object-fit: contain;
+	max-width: 100;
+	max-height: 100;
+}
+
+.acreditation .description {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.acreditation .description > * {
+	margin: 0px;
+}
+
+.acreditation .description > h3 {
+	margin-bottom: 20px;
+}
+
+#usal.acreditation {
+	background: linear-gradient(90deg, var(--usal-bgn) 0%, var(--usal-end) 100%);
+}
+
+#uoc.acreditation {
+	background: linear-gradient(90deg, var(--uoc-bgn) 0%, var(--uoc-end) 100%);
+}
+
+#google.acreditation {
+	background: linear-gradient(90deg, var(--google-bgn) 0%, var(--google-end) 100%);
+}

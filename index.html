@@ -1,0 +1,34 @@
+<head>
+	<link rel="stylesheet" href="/assets/global.css">
+	<link rel="stylesheet" href="index.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>César Gutiérrez, UX</title>
+</head>
+<body onload="injectReusables()">
+	<section class="screen" id="screen">
+		<section id="content">
+			<h1 id="name">César Gutiérrez</h1>
+			<div id="skills">
+				<h2 class="skill first">🠖 Sociólogo</h2>
+				<h2 class="skill second">🠖 Social Media Manager</h2>
+				<h2 class="skill third">🠖 Diseñador de <a href="javascript:void(0)" onclick="
+						party.confetti(this, {
+							count: party.variation.range(20, 40),
+						});
+					">Experiencia de Usuario</a></h2>
+				<br>
+				<br>
+				<button class="skill" id="knowmore" onclick="knowMore()">¿Quieres saber más? 🠖</button>
+			</div>
+		</section>
+	</section>
+
+	<!-- BIBLIOTECAS -->
+	<!-- Soporte para animación de confetti -->
+	<script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+
+	<!-- LOCAL -->
+	<script src="/assets/global.js"></script>
+</body>

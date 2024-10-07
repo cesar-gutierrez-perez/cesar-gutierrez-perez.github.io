@@ -1,0 +1,315 @@
+:root {
+	--btn: rgb(170, 255, 128); /* aaff80 */
+	--btn-pressed: rgb(250, 231, 135); /* fae787 */
+	--lnk: rgb(0, 0, 153); /* 000099 */
+	--lnk-hover: rgb(38, 0, 77); /* 26004D */
+	--lnk-pressed: rgb(153, 153, 0); /* 999900 */
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-400-Book.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-400-BookItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-700-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-700-BoldItalic.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Charter";
+	src: url('/assets/fonts/Charter-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Charter";
+	src: url('/assets/fonts/Charter-RegularItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Charter";
+	src: url('/assets/fonts/Charter-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Charter";
+	src: url('/assets/fonts/Charter-BoldItalic.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/assets/fonts/Lora-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/assets/fonts/Lora-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/assets/fonts/Lora-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Lora";
+	src: url('/assets/fonts/Lora-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src: url('/assets/fonts/SourceCodePro-Regular.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src: url('/assets/fonts/SourceCodePro-Italic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src: url('/assets/fonts/SourceCodePro-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Source Code Pro";
+	src: url('/assets/fonts/SourceCodePro-BoldIt.otf') format('opentype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+html, body {
+	/* Spacing */
+	margin: 0px;
+	padding: 0px;
+
+	font-family: Jost*;
+}
+
+section {
+	z-index: 1;
+}
+
+section.screen {
+	/* Size (covers all screen) */
+	height: 100%;
+	
+	/* Organization */
+	display: flex;
+	flex-direction: column;
+
+	/* Styling */
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: bottom;
+
+	/* Animation */
+	transition: 1s;
+}
+
+span {
+	display: inline;
+}
+
+button {
+	display: block;
+	cursor: pointer;
+	background-color: var(--btn);
+	border-radius: 5px;
+	box-shadow: 0px 5px rgba(0, 0, 0, 0.75);
+
+	font-family: "Jost*";
+	font-size: 24px;
+	padding: 4px;
+
+	border: none;
+	transition: 0.3s;
+}
+
+button:hover {
+	filter: brightness(1.20);
+}
+
+button:active {
+	background-color: var(--btn-pressed);
+	box-shadow: 0px 1px rgba(0, 0, 0, 0.75);
+	transform: translateY(2px);
+
+	transition: 0.05s;
+}
+
+a {
+	color: var(--lnk);
+	font-weight: bold;
+	text-decoration: 3px dotted underline;
+	transition: 0.3s;
+}
+
+a:hover {
+	color: var(--lnk-hover);
+	transition: 0.2s;
+}
+
+a:active {
+	color: var(--lnk-pressed);
+}
+
+h1 {
+	color: black;
+
+	font-family: "Jost*";
+	font-size: 58px;
+	font-weight: bold;
+
+	margin: 0px;
+}
+
+h2 {
+	color: rgb(30, 30, 30);
+
+	font-family: "Jost*";
+	font-size: 28px;
+	font-weight: bold;
+
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+h3 {
+	font-family: "Jost*";
+	font-weight: bold;
+
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+p {
+	font-family: "Jost*";
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+.moved {
+	transform: translateX(-100%);
+	opacity: 0;
+	transition: 1s;
+}
+
+.separator {
+	flex-grow: 999;
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.extra-text {
+	opacity: 0;
+	font-size: 0px;
+	transition: 0.5s
+}
+
+*:hover > .extra-text {
+	opacity: 1;
+	padding-right: 5px;
+	font-size: 24px;
+	transition: 0.5s;
+}
+
+.no-underline {
+	text-decoration-line: none;
+}
+
+#navbar {
+	/* Size */
+	max-height: 90px;
+
+	/* Spacing */
+	padding: 15px;
+	gap: 20px;
+
+	/* Position */
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 998;
+
+	/* Organization */
+	display: flex;
+	align-items: center;
+}
+
+#navbar button {
+	/* Organization */
+	display: flex;
+	flex-direction: horizontal;
+	justify-content: center;
+	align-items: center;
+
+	/* Styling */
+	min-width: 50px;
+	min-height: 50px;
+	gap: 5px;
+}
+
+#navbar button img {
+	height: 32px;
+}
+
+#navbar #signature {
+	height: 50px;
+	width: 50px;
+}
+
+/* Mobile devices */
+@media (any-pointer: coarse) {
+	.extra-text {
+		display: none;
+	}
+}
+
+/* Computer devices */
+@media (any-pointer: fine) {
+	
+}

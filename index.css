@@ -1,0 +1,83 @@
+@keyframes fadein-y {
+	from {
+		transform: translateY(-20px);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadein-x {
+	from {
+		transform: translateX(-20px);
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+html,body {
+	height: 100%;
+}
+
+section.screen {
+	background-image: url('/assets/img/backgrounds/background.webp');
+}
+
+#content {
+	/* Size */
+	flex-grow: 1;
+
+	/* Spacing */
+	padding: 50px;
+
+	/* Organization */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	/* Styling */
+	line-height: 1.5;
+}
+
+#name {
+	animation: fadein-y 1.5s;
+}
+
+#skills {
+	padding-top: 10px;
+	padding-left: 45px;
+}
+
+.skill {
+	opacity: 0;
+	animation: fadein-x 2s;
+	animation-delay: 1s;
+	animation-fill-mode: forwards;
+}
+
+#skills .second {
+	animation-delay: 2s;
+}
+
+#skills .third {
+	animation-delay: 3s;
+}
+
+#skills #knowmore {
+	animation-delay: 5s;
+	padding: 10px 25px 10px;
+	background-color: cornflowerblue;
+}
+
+/* Mobile devices */
+@media (any-pointer: coarse) {
+	
+}
+
+/* Computer devices */
+@media (any-pointer: fine) {
+	
+}
