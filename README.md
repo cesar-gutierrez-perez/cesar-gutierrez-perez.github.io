@@ -2,7 +2,7 @@
 
 Este repositorio contiene el código fuente del sitio web en el que estoy preparando mi *portfolio* o currículum digital.
 
-Para acceder a la web en sí, visita (cesar-gutierrez-perez.github.io)[cesar-gutierrez-perez.github.io].
+Para acceder a la web en sí, visita [cesar-gutierrez-perez.github.io](cesar-gutierrez-perez.github.io).
 
 ## To-do
  - Añadir todos los datos publicables de mi CV.
