@@ -132,7 +132,8 @@ h1 {
 	padding: 0px;
 }
 
-.grow {
+.fullwidth {
+	width: 100%;
 	flex-grow: 999;
 }
 
