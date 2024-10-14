@@ -38,6 +38,10 @@ h1 {
 	height: 32px;
 }
 
+.lesspad {
+	padding: 5px;
+}
+
 .card {
 	display: flex;
 	flex-direction: row;
