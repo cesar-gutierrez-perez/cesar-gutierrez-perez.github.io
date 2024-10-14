@@ -78,6 +78,7 @@ h1 {
 	display: flex;
 	flex-direction: column;
 
+	width: 100%;
 	gap: 10px;
 }
 
@@ -98,6 +99,10 @@ h1 {
 
 .vertical .description * {
 	margin: 0px;
+}
+
+.horizontal {
+	height: 100%;
 }
 
 .horizontal img {
