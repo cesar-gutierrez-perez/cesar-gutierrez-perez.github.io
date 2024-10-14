@@ -1,0 +1,126 @@
+:root {
+	--usal-bgn: rgb(255,128,102);
+	--usal-end: rgb(255,42,0);
+	--uoc-bgn: rgb(115,237,255);
+	--uoc-end: rgb(25,102,255);
+	--google-bgn: rgb(244,180,0);
+	--google-end: rgb(204,136,0);
+}
+
+@keyframes fadein {
+	to { opacity: 1; }
+}
+
+section.screen {
+	height: auto;
+
+	padding-top: 100px;
+
+	background-image: url('/assets/img/backgrounds/abstract-background-yellow.webp');
+	background-position: top;
+
+	opacity: 0;
+	animation: fadein 1s;
+	animation-fill-mode: forwards;
+}
+
+section.screen > * {
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-bottom: 30px;
+}
+
+h1 {
+	background: linear-gradient(90deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 100%);
+}
+
+.card {
+	display: flex;
+	flex-direction: row;
+
+	padding: 15px;
+	gap: 10px;
+
+	background: linear-gradient(90deg, rgb(0,255,127) 0%, rgb(0,179,149) 100%);
+	border-radius: 10px;
+	box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+
+	transition: 0.33s;
+}
+
+.card:hover {
+	translate: -5px -5px;
+	box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.5);
+	transition: 0.33s;
+}
+
+.list {
+	display: flex;
+	gap: 20px;
+}
+
+.list.col {
+	flex-direction: column;
+}
+
+.list.row {
+	flex-direction: row;
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+
+	gap: 10px;
+}
+
+.vertical a {
+	font-weight: normal;
+}
+
+.vertical img {
+	width: 180px;
+	height: 180px;
+}
+
+.vertical .description {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.vertical .description * {
+	margin: 0px;
+}
+
+.horizontal img {
+	object-fit: contain;
+	max-width: 100;
+	max-height: 100;
+}
+
+.horizontal .description {
+	display: flex;
+	flex-direction: column;
+	gap: 0px;
+}
+
+.horizontal .description > * {
+	margin: 0px;
+}
+
+.horizontal .description > h3 {
+	margin-bottom: 20px;
+}
+
+#usal {
+	background: linear-gradient(90deg, var(--usal-bgn) 0%, var(--usal-end) 100%);
+}
+
+#uoc {
+	background: linear-gradient(90deg, var(--uoc-bgn) 0%, var(--uoc-end) 100%);
+}
+
+#google {
+	background: linear-gradient(90deg, var(--google-bgn) 0%, var(--google-end) 100%);
+}
