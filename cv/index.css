@@ -38,8 +38,8 @@ h1 {
 	height: 32px;
 }
 
-.lesspad {
-	padding: 5px;
+.nopad {
+	padding: 0px;
 }
 
 .card {
