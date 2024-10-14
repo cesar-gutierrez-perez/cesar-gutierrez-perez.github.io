@@ -1,9 +1,0 @@
-section.screen {
-	/* Spacing */
-	padding: 100px;
-
-	/* Organization */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}

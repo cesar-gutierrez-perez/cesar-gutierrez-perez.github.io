@@ -5,7 +5,7 @@ var meta_template = document.createElement('template');
 function knowMore() {
 	screen.classList.add('moved');
 	setTimeout(() => {
-		window.location.href = '/works';
+		window.location.href = '/cv';
 	}, 1000);
 
 	setTimeout(() => {
