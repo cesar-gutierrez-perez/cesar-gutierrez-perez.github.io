@@ -65,6 +65,7 @@ h1 {
 
 .list.row {
 	flex-direction: row;
+	overflow-x: scroll;
 }
 
 .vertical {
