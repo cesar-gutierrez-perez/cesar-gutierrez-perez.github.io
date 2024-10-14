@@ -7,5 +7,5 @@ Para acceder a la web en sí, visita [cesar-gutierrez-perez.github.io](https://c
 ## To-do
  - Añadir todos los datos publicables de mi CV.
  - Añadir páginas para cada *hard skill* y cada apartado de formación.
- - Poner un enlace a mi currículum dentro de la propia página web.
- - Idear más secciones de "resumen" para no espantar a usuarios con menos tiempo disponible.
+ - Idear secciones que resuman los datos de las páginas detalladas.
+ - Trabajar en la versión móvil del sitio web.
