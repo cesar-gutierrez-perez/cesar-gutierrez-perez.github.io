@@ -69,16 +69,23 @@ h1 {
 	flex-direction: column;
 }
 
+.list.col .card {
+	min-width: 100%;
+}
+
 .list.row {
 	flex-direction: row;
 	overflow-x: scroll;
+}
+
+.list.row .card {
+	min-height: 100%;
 }
 
 .vertical {
 	display: flex;
 	flex-direction: column;
 
-	width: 100%;
 	gap: 10px;
 }
 
@@ -99,10 +106,6 @@ h1 {
 
 .vertical .description * {
 	margin: 0px;
-}
-
-.horizontal {
-	height: 100%;
 }
 
 .horizontal img {
