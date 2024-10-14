@@ -132,10 +132,6 @@ h1 {
 	padding: 0px;
 }
 
-.grow {
-	flex-grow: 999;
-}
-
 #usal {
 	background: linear-gradient(90deg, var(--usal-bgn) 0%, var(--usal-end) 100%);
 }
