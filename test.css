@@ -1,0 +1,163 @@
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-400-Book.otf') format('opentype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-400-BookItalic.otf') format('opentype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Jost*";
+	src: url('/assets/fonts/Jost-700-Bold.otf') format('opentype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+
+	font-family: "Jost*";
+
+	gap: 10px;
+}
+
+body * {
+	margin: 0px;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+p, span, li {
+	font-size: 18px;
+}
+
+img {
+	max-width: 100%;
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+
+	overflow: hidden;
+}
+
+.flex {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex.row {
+	flex-direction: row;
+}
+
+.flex.col {
+	flex-direction: column;
+}
+
+.box {
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+
+	padding: 10px;
+}
+
+.box > .content {
+	max-height: 280px;
+	overflow-y: scroll;
+}
+
+.grid {
+	display: grid;
+
+	row-gap: 10px;
+	column-gap: 10px;
+
+	justify-items: stretch;
+	align-items: stretch;
+}
+
+.left {
+	margin-left: 0;
+}
+
+.right {
+	margin-left: auto;
+	margin-right: 0;
+}
+
+/* Responsive CSS block */
+@media (min-width:320px) {
+	/* Smartphones, iPhone, portrait 480x320 phones */
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width:481px) {
+	/* Portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+	.grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (min-width:641px) {
+	/* Portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+	.grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.gridtitle {
+		grid-column-start: 1;
+		grid-column-end: 3;
+	}
+}
+
+@media (min-width:961px) {
+	/* Tablet, landscape iPad, lo-res laptops ands desktops */
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.gridtitle {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+}
+
+@media (min-width:1025px) {
+	/* Big landscape tablets, laptops, and desktops */
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.gridtitle {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+}
+
+@media (min-width:1281px) {
+	/* Hi-res laptops and desktops */
+	.grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+
+	.gridtitle {
+		grid-column-start: 1;
+		grid-column-end: 5;
+	}
+}
